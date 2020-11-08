@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Selectores</title>
+        <meta name="author" content="Juan Pablo Ramírez García" />
+        <link rel="stylesheet" href="css/maqueta.css">
+        <link href="https://allfont.es/allfont.css?fonts=franklin-gothic-book" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="container">
+            <div id="header">
+            <div id="logo">
+            <a href="index.html"><img src="images/logo_unad.png" alt="UNAD" id="logo_unad" width="101px" height="80px"></a>
+            </div>
+            <div id="title">CSS: Estilos Internos y Externos, Selectores CSS</div>
+            </div>
+            <div id="nav">
+                <div id="menu">
+                    <ul>
+                        <li id="item"><a href="index.html">Inicio</a></li>
+                        <li id="item"><a href="#">Conceptos</a>
+                            <ul id="desplegable">
+                                <li><a href="estilos.html">Estilos Internos y Externos</a></li>
+                                <li><a href="selectores.html">Selectores CSS</a></li>
+                            </ul>
+                        </li>
+                        <li id="item"><a href="#">Recursos</a>
+                        <ul id="desplegable">
+                                <li><a href="audio.html">Audio & Popcats</a></li>
+                                <li><a href="videos.html">Videos</a></li>
+                            </ul>
+                        </li>
+                        <li id="item"><a href="#">Autoevaluación</a>
+                        <ul id="desplegable">
+                                <li><a href="#">Autoevaluación 1</a></li>
+                                <li><a href="#">Autoevaluación 2</a></li>
+                            </ul>
+                        </li>
+                        <li id="item"><a href="autor.html">Autor</a></li>
+                    </ul>
+                </div>    
+            </div>
+            <div id="content">
+                <div id="section"><br><br>
+                <div id="tabla">
+                <p>En CSS, los selectores son patrones que se utilizan para seleccionar los elementos que desea aplicar estilo, a continuación te enseñamos algunos de los más usados, recuerda que al final de la tabla encontrarás la fuente de dónde se ha obtenido esta información y así podrás profundizar mas sobre los selectores.</p><br>
+                    <table>
+                        <tr>
+                            <th>Selector</th>
+                            <th>Ejemplo</th>
+                            <th>Ejemplo descripción</th>
+                        </tr>
+                        <tr>
+                            <td>.class</td>
+                            <td>.intro</td>
+                            <td>Seleciona todos los elementos con la class="intro"</td>
+                        </tr>
+                        <tr>
+                            <td>.class1.class2</td>
+                            <td>.name1.name2</td>
+                            <td>Selecciona todos los elementos con name1 y name2 establecidos dentro de su atributo de clase</td>
+                        </tr>
+                        <tr>
+                            <td>#id</td>
+                            <td>#firstname</td>
+                            <td>Selecciona el elemento con id="firstname"</td>
+                        </tr>
+                        <tr>
+                            <td>*</td>
+                            <td>*</td>
+                            <td>Selecciona todos los elementos</td>
+                        </tr>
+                        <tr>
+                            <td>element</td>
+                            <td>p</td>
+                            <td>Selecciona todos los &lt;p&gt; elementos</td>
+                        </tr>
+                        <tr>
+                            <td>element.class</td>
+                            <td>p.intro</td>
+                            <td>Selecciona todos los &lt;p&gt; elementos con class="intro"</td>
+                        </tr>
+                        <tr>
+                            <td>:hover</td>
+                            <td>a:hover</td>
+                            <td>Seleccion los links cuando el mouse pasa sobre este</td>
+                        </tr>
+                        <tr>
+                            <td>:target</td>
+                            <td>#news:target</td>
+                            <td>Selecciona el elemento #news activo actual (se hace clic en una URL que contiene ese nombre de ancla)</td>
+                        </tr>
+                        <tr>
+                            <td>[attribute]</td>
+                            <td>[target]</td>
+                            <td>Selecciona todos los elementos con un atributo de destino</td>
+                        </tr>
+                        <tr>
+                            <td>[attribute=value]</td>
+                            <td>[target=_blank]</td>
+                            <td>Selecciona todos los elementos con target="_blank", target _blank asociado a un href, permite abrir un link en una nueva ventana del navegador</td>
+                        </tr>
+                        <tr>
+                            <td>:active</td>
+                            <td>a:active</td>
+                            <td>Seleccion el link activo</td>
+                        </tr>
+                        <tr>
+                            <td>::after</td>
+                            <td>p::after</td>
+                            <td>Inserta algo después del contenido de cada elemento &lt;p&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>::before</td>
+                            <td>p::before</td>
+                            <td>Inserta algo antes del contenido de cada elemento &lt;p&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>:checked</td>
+                            <td>input:checked</td>
+                            <td>Selecciona cada elemento &lt;input&gt; marcado</td>
+                        </tr>
+                        <tr>
+                            <td>:empty</td>
+                            <td>p:empty</td>
+                            <td>Selecciona todos los elementos &lt;p> que no tienen hijos (incluidos los nodos de texto)</td>
+                        </tr>
+                        <tr>
+                            <td>:focus</td>
+                            <td>input:focus</td>
+                            <td>Selecciona el elemento de entrada que tiene el foco</td>
+                        </tr>
+                        <tr>
+                            <td>:fullscreen</td>
+                            <td>:fullscreen</td>
+                            <td>Selecciona el elemento que está en modo de pantalla completa</td>
+                        </tr>
+                        <tr>
+                            <td>:enabled</td>
+                            <td>input:enabled</td>
+                            <td>Selecciona cada elemento &lt;input> habilitado</td>
+                        </tr>
+                        <tr>
+                            <td>:checked</td>
+                            <td>input:checked</td>
+                            <td>Selecciona cada elemento every &lt;input> checkado</td>
+                        </tr>
+                        <tr>
+                            <td>:valid</td>
+                            <td>input:valid</td>
+                            <td>Selecciona toas los elementos de entrada con un valor válido</td>
+                        </tr>
+                        <tr>
+                            <td>[attribute|=value]</td>
+                            <td>[lang|=es]</td>
+                            <td>Selecciona todos los elementos con un lang que comienza con "es"</td>
+                        </tr>
+                    </table><br>
+                    <a href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blank">Fuente: https://www.w3schools.com/cssref/css_selectors.asp </a>
+                </div>
+                </div>
+                <div id="aside">
+                    <aside class="twitter">
+                        <blockquote class="twitter-tweet"><p lang="es" dir="ltr"><a href="https://twitter.com/hashtag/Educaci%C3%B3nyDesarrollo?src=hash&amp;ref_src=twsrc%5Etfw">#EducaciónyDesarrollo</a> Un adelanto de lo que será nuestro programa de todos los viernes en compañía de Gloria Herrera, Directora de la Zona Occidente de la UNAD.<br> <br>Por <a href="https://twitter.com/InstitucionalTV?ref_src=twsrc%5Etfw">@InstitucionalTV</a> ✔️ <a href="https://t.co/cvMzKUfNWh">pic.twitter.com/cvMzKUfNWh</a></p>&mdash; Universidad UNAD (@UniversidadUNAD) <a href="https://twitter.com/UniversidadUNAD/status/1324439483509624832?ref_src=twsrc%5Etfw">November 5, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        <blockquote class="twitter-tweet"><p lang="es" dir="ltr"><a href="https://twitter.com/hashtag/UNADRecomienda?src=hash&amp;ref_src=twsrc%5Etfw">#UNADRecomienda</a> 👌🏼 <br>Jesús Fernando Acosta te cuenta cuáles son nuestros 3 recomendados de la semana.✔️<br>Si eres estudiante esto seguramente te puede interesas, así que toma papel y lápiz 📝.<a href="https://twitter.com/hashtag/CulturaUNADISTA?src=hash&amp;ref_src=twsrc%5Etfw">#CulturaUNADISTA</a> <a href="https://t.co/MXzSn2MIiH">pic.twitter.com/MXzSn2MIiH</a></p>&mdash; Universidad UNAD (@UniversidadUNAD) <a href="https://twitter.com/UniversidadUNAD/status/1324725360517406723?ref_src=twsrc%5Etfw">November 6, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </aside>
+                </div>
+            </div>
+            <div id="footer">
+                <div id="footer_left">
+                    <br>
+                    <p>Diseñado por:</p><br>
+                    <p><i>Juan Pablo Ramírez García</i></p>
+                    <p>Ingeniería de Sistemas</p>
+                </div>
+                
+                <div id="footer_right">
+                <br>
+                    <p>Universidad Nacional Abierta y a Distancia</p>
+                    <p>Medellín</p>
+                    <p>2020</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#container{
+    width: 1200px;
+    height: 1400px;
+    margin: 0.5em auto;
+    padding: 0.5em;
+}
+
+#header{
+    height: 6%;
+    border-radius: 1em;
+    margin: 1em;
+    
+}
+
+#nav{
+    height: 22px;
+    
+    margin: 0.5em;
+    float: right;
+    background: #005883;
+}
+
+#content{
+    height: 78%;
+    margin: 1em;
+}
+
+#footer{
+    height: 12%;
+    background: #000000;
+    border-radius: 1em;
+    margin: 1em;
+}
+
+#footer_left{
+    font-size: 20px;
+    height: 90%;
+    height: 90%;
+    margin: 1em;
+    color: #F0B429;
+    float: left;
+}
+
+
+#footer_right{
+    font-size: 20px;
+    height: 90%;
+    margin: 1em;
+    color: #ffffff;
+    float: right;
+}
+
+#section{
+    width: 71%;
+    height: 90%;
+    
+    border-radius: 1em;
+    float: left;
+    margin: 0.5em;
+}
+
+#aside{
+    width: 25%;
+    height: 100%;
+    border-radius: 1em;
+    float: right;
+    margin: 0.5em;
+}
+
+.articulo{
+    height: 22%;
+    width: 96%;
+    
+    margin: 1em;
+    border-radius: 1em;
+}
+
+.articulo h1{
+    font-family: 'Franklin Gothic Book', arial;
+    text-align: center;
+    color: #005883;
+}
+
+
+.articulo p{
+    font-family: 'Franklin Gothic Book', arial;
+    width: 95%;
+    margin: 1em;
+    text-align: justify;
+}
+
+.articulo ul{
+    font-family: 'Franklin Gothic Book', arial;
+    width: 95%;
+    margin: 1em;
+    text-align: justify;
+}
+
+.articulo li{
+    font-family: 'Franklin Gothic Book', arial;
+    width: 95%;
+    margin: 1em;
+    text-align: justify;
+}
+
+#logo{
+    height: 82%;
+    width: 8%;
+    margin: 1em;
+    float: left;
+}
+
+#title{
+    height: 82%;
+    width: 85%;
+    color: #F47920;
+    margin: 0.5em;
+    border-radius: 1em;
+    float: right;
+    font-size: 40px;
+    text-align: center;
+}
+
+#menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+#menu #item{
+    float: left;
+}
+
+#menu #item a{
+    background: #005883;
+    color: #FFFFFF;
+    padding: 12px 22px;
+    display: block;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#menu #desplegable{
+    display: none;
+    position: absolute;
+    min-width: 150px;
+}
+
+#menu #item:hover #desplegable{
+    display: block;
+}
+
+#menu  #item  a:hover{
+    background: #F0B429;
+    color: #333333;
+}
+
+#tabla table{
+    
+    font-family: 'Franklin Gothic Book', arial;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+.ficha h2{
+    font-family: 'Franklin Gothic Book', arial;
+    text-align: left;
+    color: #005883;
+}
+
+.ficha h3{
+  font-family: 'Franklin Gothic Book', arial;
+  text-align: left;
+  color: #F0B429;
+}
+
